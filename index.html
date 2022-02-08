@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shopping Site</title>
+    <!--Fav Icon-->
+    <link rel="shortcut icon" href="images/fav-icon.png" />
+    <!--Stylesheet-->
+    <link rel="stylesheet" href="css/style.css" />
+    <!--Font Awesome-->
+    <link href="/fontawesome/css/all.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!--Navigation Start-->
+    <nav>
+      <!--Social links and phone number-->
+      <div class="social-call">
+        <!--social links-->
+        <div class="social">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-youtube"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+        <div class="phone"><span> Call +123456789 </span></div>
+      </div>
+
+      <!--Menu bar -->
+      <div class="navigation">
+        <!--Logo-->
+        <a href="#" class="logo">
+          <img src="images/logo.png" alt="logo" />
+        </a>
+        <!--Menu-->
+        <ul class="menu">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Men </a> <span class="sale-label">Sale</span></li>
+          <li><a href="#">Women</a></li>
+          <li><a href="#">Kids</a></li>
+          <li><a href="#">Shop</a></li>
+        </ul>
+        <!--right menu-->
+        <div class="right-menu">
+          <a href="#" class="search"><i class="fas fa-search"></i></a>
+          <a href="#"><i class="fas fa-user"></i></a>
+          <a href="#">
+            <i class="fas fa-shopping-cart">
+              <!-- number of items in cart -->
+              <span class="number-cart-items">0</span>
+            </i>
+          </a>
+        </div>
+      </div>
+    </nav>
+    <!--Navigation End-->
+
+    <!--search-bar-->
+    <div class="search-bar">
+      <!--search input-->
+      <div class="search-input">
+        <input type="text" placeholder="Search For Product" />
+        <!--concel button-->
+        <a href="#" class="search-cancel"><i class="fas fa-times"></i></a>
+      </div>
+    </div>
+
+
+    <!--Login and sign up form -->
+    <div class="form">
+        <div class="login-form">
+            <strong>Log In</strong>
+            <form >
+                <input type="email" placeholder="example@email.com" name="email">
+                <input type="password" placeholder="Password" name="password">
+                <input type="submit" value="Log In">
+
+
+            </form>
+        </div>
+    </div>
+
+
+
+
+
+
+
+    <!--jQuery-->
+    <script src="js/jQuery.js"></script>
+    <!--scripts-->
+    <script type="text/javascript">
+      $(document).on("click", ".search", function () {
+        $(".search-bar").addClass("search-bar-active");
+      });
+      $(document).on("click", ".search-cancel", function () {
+        $(".search-bar").removeClass("search-bar-active");
+      });
+    </script>
+  </body>
+</html>

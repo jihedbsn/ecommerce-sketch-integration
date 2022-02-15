@@ -9,6 +9,8 @@
     <link rel="shortcut icon" href="images/fav-icon.png" />
     <!--Stylesheet-->
     <link rel="stylesheet" href="css/style.css" />
+    <!--LightSlider-->
+    <link rel="stylesheet" href="css/lightslider.css" />
     <!--Font Awesome-->
     <link href="/fontawesome/css/all.css" rel="stylesheet" />
   </head>
@@ -44,7 +46,7 @@
         <!--right menu-->
         <div class="right-menu">
           <a href="#" class="search"><i class="fas fa-search"></i></a>
-          <a href="#"><i class="fas fa-user"></i></a>
+          <a href="#" class="account"><i class="fas fa-user"></i></a>
           <a href="#">
             <i class="fas fa-shopping-cart">
               <!-- number of items in cart -->
@@ -66,20 +68,126 @@
       </div>
     </div>
 
-
     <!--Login and sign up form -->
     <div class="form">
-        <div class="login-form">
-            <strong>Log In</strong>
-            <form >
-                <input type="email" placeholder="example@email.com" name="email">
-                <input type="password" placeholder="Password" name="password">
-                <input type="submit" value="Log In">
-
-
-            </form>
+      <div class="login-form">
+        <a href="#" class="form-cancel">
+          <i class="fas fa-times"></i>
+        </a>
+        <strong>Log In</strong>
+        <form>
+          <input
+            type="email"
+            placeholder="example@email.com"
+            name="email"
+            required
+          />
+          <input
+            type="password"
+            placeholder="Password"
+            name="password"
+            required
+          />
+          <input type="submit" value="Log In" />
+        </form>
+        <div class="form-btns">
+          <a href="#" class="forget">Forget Your Password?</a>
+          <a href="#" class="sign-up-btn">Create Account</a>
         </div>
+      </div>
+      <div class="register-form">
+        <a href="#" class="form-cancel">
+          <i class="fas fa-times"></i>
+        </a>
+        <strong>SIGN UP</strong>
+        <form>
+          <input type="text" placeholder="Full name" name="name" required />
+          <input
+            type="email"
+            placeholder="example@email.com"
+            name="email"
+            required
+          />
+          <input
+            type="password"
+            placeholder="Password"
+            name="password"
+            required
+          />
+          <input type="submit" value="Log In" />
+        </form>
+        <div class="form-btns">
+          <a href="#" class="have-account">Already have an account</a>
+        </div>
+      </div>
     </div>
+
+    <ul id="adaptive" class="cs-hidden">
+      <li class="item-a">
+        <div class="full-slider-box f-slide-1">
+          <div class="slider-text-container">
+            <div class="f-slider-text">
+              <span> Limited offer </span>
+              <strong>
+                30% off <br />
+                with <font> promo code</font>
+              </strong>
+              <a href="#" class="f-slider-btn">Shop nows</a>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li class="item-a">
+        <div class="full-slider-box f-slide-2">
+          <div class="slider-text-container">
+            <div class="f-slider-text">
+              <span> Limited offer </span>
+              <strong>
+                30% off <br />
+                with <font> promo code</font>
+              </strong>
+              <a href="#" class="f-slider-btn">Shop nows</a>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li class="item-a">
+        <div class="full-slider-box f-slide-3">
+          <div class="slider-text-container">
+            <div class="f-slider-text">
+              <span> Limited offer </span>
+              <strong>
+                30% off <br />
+                with <font> promo code</font>
+              </strong>
+              <a href="#" class="f-slider-btn">Shop nows</a>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li class="item-a">
+        <div class="full-slider-box f-slide-4">
+          <div class="slider-text-container">
+            <div class="f-slider-text">
+              <span> Limited offer </span>
+              <strong>
+                30% off <br />
+                with <font> promo code</font>
+              </strong>
+              <a href="#" class="f-slider-btn">Shop nows</a>
+            </div>
+          </div>
+        </div>
+      </li>
+    </ul>
+
+    <div class="feature-heading">
+      <h2>
+        Featured Category
+      </h2>
+    </div>
+
+
 
 
 
@@ -89,14 +197,9 @@
 
     <!--jQuery-->
     <script src="js/jQuery.js"></script>
-    <!--scripts-->
-    <script type="text/javascript">
-      $(document).on("click", ".search", function () {
-        $(".search-bar").addClass("search-bar-active");
-      });
-      $(document).on("click", ".search-cancel", function () {
-        $(".search-bar").removeClass("search-bar-active");
-      });
-    </script>
+    <!--LightSlider-->
+    <script src="js/lightslider.js"></script>
+    <!--Script-->
+    <script src="js/scripts.js"></script>
   </body>
 </html>

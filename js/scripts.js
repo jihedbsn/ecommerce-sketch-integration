@@ -23,7 +23,7 @@ $(document).on("click", ".have-account", function () {
     $(".form").addClass("login-active").removeClass("sign-up-active");
 });
 
-/* slider */
+/* home landing slider */
 $(document).ready(function() {
   $('#adaptive').lightSlider({
       adaptiveHeight:true,
@@ -32,4 +32,15 @@ $(document).ready(function() {
       loop:true,
       auto:true
   });
+});
+
+/* featured categories slider */
+$(document).ready(function() {
+  $('#autoWidth').lightSlider({
+      autoWidth:true,
+      loop:true,
+      onSliderLoad: function() {
+          $('#autoWidth').removeClass('cS-hidden');
+      } 
+  });  
 });
